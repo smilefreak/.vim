@@ -10,6 +10,7 @@ Plugin 'git@github.com:ervandew/supertab.git'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ivanov/vim-ipython'
 Plugin 'vim-scripts/Vim-R-plugin'
+Plugin 'git@github.com:kien/rainbow_parentheses.vim.git'
 filetype plugin indent on 
 "" Solarized options
 let g:solarized_termtrans = 1
