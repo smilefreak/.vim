@@ -11,6 +11,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'ivanov/vim-ipython'
 Plugin 'vim-scripts/Vim-R-plugin'
 Plugin 'git@github.com:kien/rainbow_parentheses.vim.git'
+Plugin 'https://github.com/jimenezrick/vimerl'
 filetype plugin indent on 
 "" Solarized options
 let g:solarized_termtrans = 1
