@@ -12,6 +12,9 @@ Plugin 'ivanov/vim-ipython'
 Plugin 'vim-scripts/Vim-R-plugin'
 Plugin 'git@github.com:kien/rainbow_parentheses.vim.git'
 Plugin 'https://github.com/jimenezrick/vimerl'
+Plugin 'https://github.com/kien/ctrlp.vim'
+Plugin 'https://github.com/jistr/vim-nerdtree-tabs'
+Plugin 'https://github.com/jceb/vim-orgmode'
 filetype plugin indent on 
 "" Solarized options
 let g:solarized_termtrans = 1
@@ -31,4 +34,9 @@ set dir=$HOME/.vim/backup
 set tabstop=4
 set expandtab
 set shiftwidth=4
+""" Add some bindings to erlang :)
+map <C-t> :tabn<Enter>
+map <C-n> :tabnew<Enter>
+autocmd BufRead,BufNew *.md set filetype=markdown
+
 
