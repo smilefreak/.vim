@@ -15,6 +15,7 @@ Plugin 'https://github.com/jimenezrick/vimerl'
 Plugin 'https://github.com/kien/ctrlp.vim'
 Plugin 'https://github.com/jistr/vim-nerdtree-tabs'
 Plugin 'https://github.com/jceb/vim-orgmode'
+Plugin 'git@github.com:fatih/vim-go.git'
 filetype plugin indent on 
 "" Solarized options
 let g:solarized_termtrans = 1
