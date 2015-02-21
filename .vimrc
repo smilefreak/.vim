@@ -19,6 +19,8 @@ Plugin 'https://github.com/jceb/vim-orgmode'
 Plugin 'git@github.com:fatih/vim-go.git'
 Plugin 'https://github.com/vim-scripts/SyntaxRange'
 Plugin 'https://github.com/jpalardy/vim-slime.git'
+Plugin 'git@github.com:Valloric/YouCompleteMe.git'
+
 filetype plugin indent on 
 "" Solarized options
 let g:solarized_visibility = "high"
@@ -37,7 +39,7 @@ set number
 """ Set a useful backup dir so swaps don't dirty up directories
 set backupdir=$HOME/.vim/backup
 set dir=$HOME/.vim/backup
-""" Tab options (expand all tabs and fix width at 4)
+""" Tab options (expand all tabs and fix width at 3)
 set tabstop=4
 set expandtab
 set shiftwidth=4
