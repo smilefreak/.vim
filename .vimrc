@@ -50,4 +50,3 @@ autocmd BufRead,BufNew *.md set filetype=markdown
 "" Make back space work propely
 set backspace=indent,eol,start
 
-
