@@ -20,6 +20,8 @@ Plugin 'git@github.com:fatih/vim-go.git'
 Plugin 'https://github.com/vim-scripts/SyntaxRange'
 Plugin 'https://github.com/jpalardy/vim-slime.git'
 Plugin 'git@github.com:Valloric/YouCompleteMe.git'
+Plugin 'git@github.com:lervag/vimtex.git'
+Plugin 'git@github.com:scrooloose/syntastic.git'
 
 filetype plugin indent on 
 "" Solarized options
@@ -49,4 +51,10 @@ set shiftwidth=4
 autocmd BufRead,BufNew *.md set filetype=markdown
 "" Make back space work propely
 set backspace=indent,eol,start
+""" if !exists('g:ycm_semantic_triggers')
+"""    let g:ycm_semantic_triggers = {}
+""  endif
+""  let g:ycm_semantic_triggers.tex = [
+""        \ 're!\\[A-Za-z]*(ref|cite)[A-Za-z]*([^]]*])?{([^}]*, ?)*'
+ ""       \ ]
 
