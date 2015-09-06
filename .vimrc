@@ -1,3 +1,17 @@
+"            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+"                    Version 2, December 2004
+" 
+" Copyright (C) 2015 <name of copyright holder>
+" 
+" Everyone is permitted to copy and distribute verbatim or modified
+" copies of this license document, and changing it is allowed as long
+" as the name is changed.
+" 
+"            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+"   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+" 
+"  0. You just DO WHAT THE FUCK YOU WANT TO.
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -22,6 +36,7 @@ Plugin 'https://github.com/jpalardy/vim-slime.git'
 Plugin 'git@github.com:Valloric/YouCompleteMe.git'
 Plugin 'git@github.com:lervag/vimtex.git'
 Plugin 'git@github.com:scrooloose/syntastic.git'
+Plugin 'https://github.com/antoyo/vim-licenses'
 
 filetype plugin indent on 
 "" Solarized options
@@ -57,4 +72,7 @@ set backspace=indent,eol,start
 ""  let g:ycm_semantic_triggers.tex = [
 ""        \ 're!\\[A-Za-z]*(ref|cite)[A-Za-z]*([^]]*])?{([^}]*, ?)*'
  ""       \ ]
+let g:licenses_copyright_holders_name = 'Boocock James <james.boocock@otago.ac.nz>'
+let g:licenses_authors_name = 'Boocock James <james.boocock@otago.ac.nz>'
+let g:licenses_default_commands = ['gpl', 'mit', 'foobar']
 
