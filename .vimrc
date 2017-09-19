@@ -75,4 +75,8 @@ set backspace=indent,eol,start
 let g:licenses_copyright_holders_name = 'Boocock James <james.boocock@otago.ac.nz>'
 let g:licenses_authors_name = 'Boocock James <james.boocock@otago.ac.nz>'
 let g:licenses_default_commands = ['gpl', 'mit', 'foobar']
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+au BufRead,BufNewFile *.tex set filetype=tex
+au BufNewFile,BufRead *.ejs set filetype=html
 
