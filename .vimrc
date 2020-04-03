@@ -24,7 +24,7 @@ Plugin 'git@github.com:ervandew/supertab.git'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ivanov/vim-ipython'
 Plugin 'https://github.com/tpope/vim-speeddating'
-Plugin 'vim-scripts/Vim-R-plugin'
+Plugin 'https://github.com/jalvesaq/Nvim-R'
 Plugin 'git@github.com:kien/rainbow_parentheses.vim.git'
 Plugin 'https://github.com/jimenezrick/vimerl'
 Plugin 'https://github.com/kien/ctrlp.vim'
@@ -33,24 +33,34 @@ Plugin 'https://github.com/jceb/vim-orgmode'
 Plugin 'git@github.com:fatih/vim-go.git'
 Plugin 'https://github.com/vim-scripts/SyntaxRange'
 Plugin 'https://github.com/jpalardy/vim-slime.git'
-Plugin 'git@github.com:Valloric/YouCompleteMe.git'
+""Plugin 'git@github.com:Valloric/YouCompleteMe.git'
 Plugin 'git@github.com:lervag/vimtex.git'
 Plugin 'git@github.com:scrooloose/syntastic.git'
 Plugin 'https://github.com/antoyo/vim-licenses'
+Plugin 'https://bitbucket.org/larsyencken/vim-drake-syntax.git'
+
 
 filetype plugin indent on 
 "" Solarized options
+syntax on
+""set term=screen-256color-bce
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
-set background=dark
+let g:solarized_termtrans = 1
+
+let t_Co=16
+"let g:solarized_termcolours=256
+""let g:solarized_termcolors=256
 colorscheme solarized
-syntax on
+set background=dark
 
 
 "" Slime settings
-let g:slime_target= "tmux"
+
 let g:slime_paste_file = "$HOME/.slime_paste"
 "" Turn on numbering
+let g:slime_target = "tmux"
+
 set number
 
 """ Set a useful backup dir so swaps don't dirty up directories
@@ -71,12 +81,14 @@ set backspace=indent,eol,start
 ""  endif
 ""  let g:ycm_semantic_triggers.tex = [
 ""        \ 're!\\[A-Za-z]*(ref|cite)[A-Za-z]*([^]]*])?{([^}]*, ?)*'
- ""       \ ]
-let g:licenses_copyright_holders_name = 'Boocock James <james.boocock@otago.ac.nz>'
-let g:licenses_authors_name = 'Boocock James <james.boocock@otago.ac.nz>'
+""       \ ]
+let g:licenses_copyright_holders_name = 'Boocock James <james.boocock@ucla.edu>'
+let g:licenses_authors_name = 'Boocock James <james.boocock@ucla.edu>'
 let g:licenses_default_commands = ['gpl', 'mit', 'foobar']
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 au BufRead,BufNewFile *.tex set filetype=tex
 au BufNewFile,BufRead *.ejs set filetype=html
-
+au BufNewFile,BufRead Snakefile set syntax=snakemake
+au BufNewFile,BufRead *.smk set syntax=snakemake
+let g:ycm_path_to_python_interpreter = '/usr/bin/python'
